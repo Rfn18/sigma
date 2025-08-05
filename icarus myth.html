@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Icarus Mythology Forum</title>
+    <style>
+      body {
+        font-family: "Georgia", serif;
+        background: linear-gradient(to right, #f2e8cf, #f4f1ea);
+        color: #3a3a3a;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0 20px;
+      }
+
+      header {
+        text-align: center;
+        padding: 30px 10px 10px;
+        background: #c77f00;
+        color: white;
+        position: relative;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      }
+
+      header h1 {
+        margin-bottom: 8px;
+        font-size: 2.8rem;
+        letter-spacing: 3px;
+      }
+
+      header p {
+        font-style: italic;
+        font-size: 1.2rem;
+      }
+
+      .about-icarus {
+        max-width: 900px;
+        margin: 30px auto;
+        background: #fff9e6;
+        border: 2px solid #c77f00;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        box-shadow: 2px 2px 10px rgba(199, 127, 0, 0.15);
+      }
+
+      .about-icarus img {
+        max-width: 280px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(199, 127, 0, 0.6);
+        user-select: none;
+        pointer-events: none;
+      }
+
+      .about-icarus div {
+        flex: 1;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #5a3e00;
+      }
+
+      section.posts {
+        max-width: 900px;
+        margin: 40px auto 80px;
+      }
+
+      article.post {
+        background: #fff9e6;
+        border: 2px solid #c77f00;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 10px rgba(199, 127, 0, 0.15);
+      }
+
+      article.post h3 {
+        color: #8b5e00;
+        margin-bottom: 10px;
+      }
+
+      article.post .author {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #a67400;
+      }
+
+      article.post p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+
+      form {
+        max-width: 900px;
+        margin: 0 auto 50px;
+        background: #fff9e6;
+        border: 2px solid #c77f00;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 2px 2px 10px rgba(199, 127, 0, 0.15);
+      }
+
+      form h2 {
+        color: #8b5e00;
+        margin-bottom: 15px;
+      }
+
+      form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #b37600;
+      }
+
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1.5px solid #c77f00;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: inherit;
+        resize: vertical;
+      }
+
+      form button {
+        background: #c77f00;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      form button:hover {
+        background: #a05f00;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Icarus Mythology Forum</h1>
+      <p>
+        Discuss the legend of Icarus and the wisdom of flying too close to the
+        sun.
+      </p>
+    </header>
+
+    <section class="about-icarus" aria-label="About the myth of Icarus">
+      <img
+        src="2e0187b57b483732d28564c7270b31f3.jpg"
+        alt="Illustration of Icarus flying with wings"
+      />
+      <div>
+        <h2>The Myth of Icarus</h2>
+        <p>
+          In Greek mythology, Icarus was the son of Daedalus, a skilled
+          craftsman who created wings made of feathers and wax so they could
+          escape from Crete by flying. Despite warnings from his father not to
+          fly too close to the sun or too near the sea, Icarus became
+          overconfident and flew too high. The sun’s heat melted the wax in his
+          wings, and he fell into the sea and drowned. This myth is often seen
+          as a cautionary tale about hubris and the dangers of overambition.
+        </p>
+      </div>
+    </section>
+
+    <section class="posts" id="posts">
+      <article class="post">
+        <h3>What do you think Icarus symbolizes?</h3>
+        <div class="author">by MythosFan42</div>
+        <p>
+          To me, Icarus is a symbol of youthful ambition and the dangers of
+          hubris. Flying too high might get you closer to your dreams — but also
+          risks everything.
+        </p>
+      </article>
+
+      <article class="post">
+        <h3>Modern adaptations of Icarus myth?</h3>
+        <div class="author">by ClassicLover</div>
+        <p>
+          There are so many! From movies to music, the theme of Icarus is
+          everywhere — reminding us to balance ambition with wisdom.
+        </p>
+      </article>
+    </section>
+
+    <form id="postForm">
+      <h2>Share your thoughts</h2>
+      <label for="author">Name:</label>
+      <input
+        type="text"
+        id="author"
+        name="author"
+        placeholder="Your name"
+        required
+      />
+
+      <label for="title">Post Title:</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        placeholder="Title of your post"
+        required
+      />
+
+      <label for="content">Post Content:</label>
+      <textarea
+        id="content"
+        name="content"
+        rows="5"
+        placeholder="Write your post here..."
+        required
+      ></textarea>
+
+      <button type="submit">Submit Post</button>
+    </form>
+
+    <script>
+      const postForm = document.getElementById("postForm");
+      const postsContainer = document.getElementById("posts");
+
+      postForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const author = this.author.value.trim();
+        const title = this.title.value.trim();
+        const content = this.content.value.trim();
+
+        if (!author || !title || !content) {
+          alert("Please fill in all fields.");
+          return;
+        }
+
+        // Create new post element
+        const postEl = document.createElement("article");
+        postEl.className = "post";
+
+        const postTitle = document.createElement("h3");
+        postTitle.textContent = title;
+
+        const postAuthor = document.createElement("div");
+        postAuthor.className = "author";
+        postAuthor.textContent = `by ${author}`;
+
+        const postContent = document.createElement("p");
+        postContent.textContent = content;
+
+        postEl.appendChild(postTitle);
+        postEl.appendChild(postAuthor);
+        postEl.appendChild(postContent);
+
+        // Add new post to top
+        postsContainer.insertBefore(postEl, postsContainer.firstChild);
+
+        // Reset form
+        postForm.reset();
+      });
+    </script>
+  </body>
+</html>
